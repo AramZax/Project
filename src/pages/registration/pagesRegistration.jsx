@@ -10,7 +10,11 @@ import "../../pages/registration/pagesRegistration.css"
 
 const PagesRegistration = () => {
   const { register, handleSubmit } = useForm({ shouldUseNativeValidation: true });
-  const onSubmit = async data => {console.log(data)};
+  const onSubmit = async data => {
+    console.log(data);
+  }
+
+
  
   return (
     <div >
@@ -23,7 +27,7 @@ const PagesRegistration = () => {
 
           <div className='registraton_name_inp' >
             <span className='Name_title' >Enter your full name</span>
-            <input className='Name_register'  type="text" placeholder='John sla...'  {...register("firstName")} />
+            <input className='Name_register'  type="text" placeholder='John sla...'  {...register("name")} />
           </div>
 
 
