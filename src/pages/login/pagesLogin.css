@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.full_login{
+    width: 100%;
+    height: 720px;
+    background-image: url("../../assets/newLogin.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     display: flex;
+    justify-content: center;
+}
+.full_login_input_group{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}   
+
+.login_title{
+    color:  black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login_page_emailBtn{
+    width: 50%;
+    height: 45px;
+    border: none;
+    background-color: #9CC3D5;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+   
+}
+.Pages_login_link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.facebook_block{
+    width: 50%;
+    height: 45px;
+    background-color: #5B84B1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 11px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 5px;
+    
+}
+.fbIcon,.instIcon{
+    font-size: 19px;
+   
+}
+
+
+.instagram_block{
+    width: 50%;
+    height: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(275.92deg, rgba(249, 237, 50, 0.2) 1.16%, rgba(249, 237, 50, 0.2) 24.68%, rgba(249, 237, 50, 0.098) 44.01%), linear-gradient(98.43deg, rgba(0, 42, 255, 0.46) 8.7%, rgba(0, 42, 255, 0.1886) 22.68%, rgba(237, 228, 88, 0) 36.29%), linear-gradient(275.43deg, rgba(249, 237, 50, 0.54) 12.61%, rgba(249, 237, 50, 0.3726) 19.79%, rgba(249, 237, 50, 0.1728) 22.02%, rgba(249, 237, 50, 0.185604) 24.2%, rgba(249, 237, 50, 0.1566) 24.2%), linear-gradient(94.2deg, rgba(255, 15, 114, 0.7) 61.21%, rgba(238, 42, 123, 0.591667) 72.25%, rgba(238, 42, 123, 0.371) 78.82%, rgba(238, 42, 123, 0.366667) 78.82%, rgba(238, 42, 123, 0) 103.9%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    gap: 5px;
+}
+
+@media screen and (max-width:933px){
+    .login_page_emailBtn,
+    .instagram_block,
+    .facebook_block{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+        .full_login{
+            background-image: url("../../assets/newLoginTablet.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+  
+}
+@media screen and (max-width:668px){
+    .login_page_emailBtn,
+    .instagram_block,
+    .facebook_block{
+        width: 80%;
+    }
+    .full_login_input_group{
+        width: 60%;
+    }
+}
+@media screen and (max-width:489px){
+    .full_login_input_group{
+        width: 70%;
+    }
+    .login_page_emailBtn,
+    .instagram_block,
+    .facebook_block{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .full_login{
+        background-image: url("../../assets/newLoginPhone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .full_login_input_group{
+        width: 80%;
+    }
+
+    }
+
+    @media screen and (max-width:331px){
+        .full_login_input_group{
+            width: 100%;
+        }
+    }
+   

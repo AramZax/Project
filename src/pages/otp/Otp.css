@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Otp_full_login{
+    width: 100%;
+    height: 720px;
+    background-image: url('../../assets/newLogin.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.Otp_full_login_input{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    
+}
+.Otp_title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.Otp_number_inp{
+    width: 50%;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Otp_next_BtnNext{
+    width: 50%;
+    height: 45px;
+    background: #9CC3D5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+.otp_page_link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .Otp_full_login_input{
+     width: 70%;
+    }
+    .Otp_full_login{
+        background-image: url("../../assets/newLoginTablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .Otp_next_BtnNext{
+        width: 65%;
+    }
+    
+    
+}
+@media screen and (max-width:500px){
+    .Otp_next_BtnNext{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 412px){
+    .Otp_full_login_input{
+        width: 90%;
+    }
+    .Otp_full_login{
+        background-image: url("../../assets/newLoginPhone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .Otp_next_BtnNext{
+        width: 95%;
+    }
+  
+}

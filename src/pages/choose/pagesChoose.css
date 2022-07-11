@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.choose_section_parent{
+    width: 100%;
+    height: 720px;
+    background-image: url("../../assets/registerPage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_choose{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.page_choose_title{
+    font-size: 35px;
+    font-family: Arial;
+}
+.choose_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.choose_btn{
+    width: 50%;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 11px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    background-color: #9CC3D5;
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width:940px){
+    .page_choose{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .choose_section_parent{
+        background-image: url('../..//assets/registerPagrTablet.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+}
+@media screen and (max-width:624px){
+    .page_choose{
+        width: 90%;
+    }
+    .choose_btn{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:528px){
+    .page_choose{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:412px){
+    .choose_section_parent{
+        background-image: url('../..//assets/registerPagePhone.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .choose_btn{
+        width: 70%;
+    }
+}
+@media screen and (max-width:352px){
+    .choose_btn{
+        width: 85%;
+    }
+}

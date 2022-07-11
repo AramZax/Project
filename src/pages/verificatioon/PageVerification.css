@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;  
+}
+.full_verification{
+    width: 100%;
+    height: 600px;
+    background-image: url("../../assets/newLogin.png");
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.full_sms_masege_inp{
+    width: 500px;
+    height: 500px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+.sms_masege_inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  
+}
+.verification_title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sms_inp{
+    width: 40px;
+    height: 40px;  
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.Next_btn{
+        width: 50%;
+        height: 45px;
+        background: #9CC3D5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 11px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+}
+.Clear_button{
+    width:35%;
+    height: 35px;
+    background: #9CC3D5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+.sms_inp{
+    width: 10%;
+    height: 45px;
+}
+.pages_verification_linl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+p{
+    font-family: Arial;
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px){
+  .full_verification{
+    background-image: url("../../assets/newLoginTablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Next_btn{
+    width: 60%;
+  }
+  .Clear_button{
+    width: 45%;
+  }
+  p{
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:412px){
+    .full_verification{
+        background-image: url("../../assets/newLoginPhone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .verification_titles{
+        font: 15px;
+      }
+}

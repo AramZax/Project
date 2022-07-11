@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.email_section_parent {
+    width: 100%;
+    height: 720px;
+    background-image: url("../../assets/registerPage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+
+}
+
+.page_email {
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+
+}
+
+.email_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+
+}
+.email_section_link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+text-decoration: none;
+}
+
+.email_section_next {
+    width: 40%;
+    height: 45px;
+    background: #9CC3D5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+}
+
+.email_section_title {
+    font-size: 22px;
+    font-family: Arial;
+}
+.email_register{
+    width: 60%;
+    height: 45px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 18px;
+}
+@media screen and (max-width:728px) {
+    .email_section_parent {
+        background-image: url('../..//assets/registerPagrTablet.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .email_register{
+        width: 65%;
+    }
+
+    .email_section_next{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .email_section_parent {
+        background-image: url('../..//assets/registerPagePhone.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .email_register{
+        width: 70%;
+    }
+    .email_section_next{
+        width: 55%;
+    }
+}
