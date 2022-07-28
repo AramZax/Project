@@ -42,11 +42,35 @@
     cursor: pointer;
    
 }
+.login_page_input{
+    width: 50%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+.loginSubmit{
+    width: 50%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color:#9CC3D5; 
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
 .Pages_login_link{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     text-decoration: none;
+
 }
 
 .facebook_block{
@@ -85,11 +109,25 @@
     gap: 5px;
 }
 
+
+.loading_section{
+    width: 100%;
+    height: 720px;
+    background-image: url("../../assets/newLogin.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:933px){
     .login_page_emailBtn,
     .instagram_block,
-    .facebook_block{
-        width: 70%;
+    .facebook_block,
+    .login_page_input,
+    .loginSubmit{
+        width: 80%;
     }
 }
 
@@ -105,7 +143,9 @@
 @media screen and (max-width:668px){
     .login_page_emailBtn,
     .instagram_block,
-    .facebook_block{
+    .facebook_block,
+    .login_page_input,
+    .loginSubmit{
         width: 80%;
     }
     .full_login_input_group{
@@ -118,7 +158,9 @@
     }
     .login_page_emailBtn,
     .instagram_block,
-    .facebook_block{
+    .facebook_block,
+    .login_page_input,
+    .loginSubmit{
         width: 90%;
     }
 }

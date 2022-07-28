@@ -1,32 +1,33 @@
 import React from "react";
 import MainHeader from "../../components/mainHeader/mainComponent"
 import "../homePage/HomePage.css"
-import{HiLocationMarker} from 'react-icons/hi'
+import ComponentFooter from '../../components/footer/componentFooter'
+import CaruselPages from "../carusel/CaruselPages";
+import CatigoryPAges from "../Category/CatigoryPAges";
+import TopPAges from "../TopSalon/TopPAges";
 
-const HomePage = ()=>{
-   
-    return(
-            <>
+
+
+const HomePage = () => {
+
+
+
+    return (
+
+        <div>
+
             <MainHeader />
 
+            <div className="Home_page_block">
+                <CaruselPages />
+                <CatigoryPAges />
+                <TopPAges />
+                <CatigoryPAges />
+                <ComponentFooter />
+            </div>
 
-                <div className="Home_page_block">
+        </div>
 
-                    <div className="Home_page_main">
-
-                        <button className="Home_button">
-                          <HiLocationMarker className="Location_icon"/>
-                            Top treding saloon near you</button>
-
-                        <button className="Home_button">Available saloon</button>
-                        
-                        <button className="Home_button">Book a slot</button>
-
-                    </div> 
-
-                </div>
-                
-            </>
     )
 }
 export default HomePage

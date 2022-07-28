@@ -1,29 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.Pages_register_parent{
+.Pages_register_parent {
     width: 100%;
-    height: 720px;
+    height: auto;
     background-image: url("../../assets/registerPage.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
-    
+
 }
-.form_register_section{
+
+.form_register_section {
     width: 50%;
-    height: 700px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 80px;
-    
+
 }
-.registraton_name_inp{
+
+.registraton_name_inp {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,11 +33,14 @@
     gap: 25px;
 }
 
-.Name_title{
+.Name_title {
     font-size: 22px;
 }
 
-.Name_register{
+.Name_register,
+.email_registerS,
+.password_register,
+.password_donfirmation {
     width: 60%;
     height: 45px;
     background: #FFFFFF;
@@ -48,15 +53,15 @@
 }
 
 
-.Registration_Link{
+.Registration_Link {
     width: 100%;
     display: flex;
     justify-content: center;
     text-decoration: none;
-    
+
 }
 
-.Next_Register{
+.Next_Register {
     width: 50%;
     height: 45px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -70,23 +75,23 @@
 }
 
 
-.Register_sign{
+.Register_sign {
     font-size: 35px;
     font-family: Arial;
 }
 
-.register_footer{
+.register_footer {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.regLogin{
+.regLogin {
     font-size: 28px;
     outline: none;
 }
 
-.facebook_registration_block{
+.facebook_registration_block {
     width: 50%;
     height: 50px;
     background-color: #5B84B1;
@@ -101,7 +106,7 @@
     gap: 5px;
 }
 
-.instagem_registration_block{
+.instagem_registration_block {
     width: 50%;
     height: 50px;
     color: white;
@@ -117,118 +122,161 @@
 }
 
 
-@media screen and (max-width: 1123px){
-    .Name_register{
-        width: 70%;
+@media screen and (max-width: 1123px) {
+
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation {
+        width: 60%;
     }
-    .form_register_section{
+
+    .form_register_section {
         width: 80%;
     }
+
     .instagem_registration_block,
     .facebook_registration_block,
     .Next_Register {
         width: 60%;
     }
-    
+
 }
-@media screen and (max-width:881px){
-    .Name_register{
+
+@media screen and (max-width:881px) {
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation{
+        width: 60%;
+    }
+
+    .form_register_section {
         width: 80%;
     }
-    .form_register_section{
-        width: 80%;
-    }
+
     .instagem_registration_block,
     .facebook_registration_block,
-    .Next_Register{
+    .Next_Register {
         width: 60%;
     }
 }
 
 
-@media screen and (max-width:819px){
-    .Name_register{
-        width: 90%;
+@media screen and (max-width:819px) {
+
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation {
+        width: 60%;
     }
-    .form_register_section{
+
+    .form_register_section {
         width: 80%;
     }
- 
+
 }
 
-@media screen and (max-width:790px){
-    .Name_register{
-        width: 95%;
+@media screen and (max-width:790px) {
+
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation {
+        width: 60%;
     }
-    .form_register_section{
+
+    .form_register_section {
         width: 80%;
     }
-   
+
 }
 
 
-@media screen and (max-width:768px){
-    .Pages_register_parent{
+@media screen and (max-width:768px) {
+    .Pages_register_parent {
         background-image: url('../..//assets/registerPagrTablet.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
 
-@media screen and (max-width:654px){
-    .Name_register{
+@media screen and (max-width:654px) {
+
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation {
         width: 100%;
     }
-    .form_register_section{
+
+    .form_register_section {
         width: 80%;
     }
+
     .instagem_registration_block,
     .facebook_registration_block,
-    .Next_Register{
+    .Next_Register {
         width: 60%;
     }
-}
-@media screen and (max-width:558px){
-    .Name_register{
-        width: 90%;
-    }
-    .form_register_section{
-        width: 80%;
-    }
-    .instagem_registration_block,
-    .facebook_registration_block,
-    .Next_Register{
-        width: 60%;
-    }
-    
 }
 
-@media screen and (max-width:427px){
+@media screen and (max-width:558px) {
+
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation {
+        width: 90%;
+    }
+
+    .form_register_section {
+        width: 80%;
+    }
+
     .instagem_registration_block,
     .facebook_registration_block,
-    .Next_Register{
+    .Next_Register {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:427px) {
+
+    .instagem_registration_block,
+    .facebook_registration_block,
+    .Next_Register {
         width: 65%;
     }
 }
 
-@media screen and (max-width:412px){
-    .Pages_register_parent{
+@media screen and (max-width:412px) {
+    .Pages_register_parent {
         background-image: url('../..//assets/registerPagePhone.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .Name_register{
+
+    .Name_register,
+    .email_registerS,
+    .password_register,
+    .password_donfirmation {
         width: 90%;
     }
-    .form_register_section{
+
+    .form_register_section {
         width: 90%;
     }
-  
+
 }
-@media screen and (max-width:365px){
+
+@media screen and (max-width:365px) {
+
     .instagem_registration_block,
     .facebook_registration_block,
-    .Next_Register{
+    .Next_Register {
         width: 85%;
     }
 }
