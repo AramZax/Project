@@ -3,6 +3,7 @@ import ComponentHeader from '../../components/header/componentHeader';
 import { useForm } from 'react-hook-form';
 import "../verificatioon/PageVerification.css"
 import { Link, useLocation } from 'react-router-dom';
+import ComponentFooter from '../../components/footer/componentFooter';
 
 
 
@@ -31,10 +32,17 @@ const PageVerification = () => {
         <>
             <ComponentHeader />
             <div className='full_verification'>
+                <div className='login_register'>
+                        <div className='log_sign' >
+                            <Link to="/register" className='pages_login_sign'>sign up</Link>
+                            <button className='pages_login_btn'>login </button>
+
+                        </div>
+                    </div>
                 <form onSubmit={handleSubmit(onSubmit)} className="full_sms_masege_inp" >
                     
                     <div className='verification_title'>
-                        <h1 className='verification_titles'>Verification code</h1>
+                        <h1 className='verification_titles'> Log in by OTP</h1>
                     </div>
 
                     <p> Please enter verification code sent to your mobile </p>
@@ -69,6 +77,7 @@ const PageVerification = () => {
 
                     </button>
                 </form>
+                <ComponentFooter/>
 
             </div>
         </>

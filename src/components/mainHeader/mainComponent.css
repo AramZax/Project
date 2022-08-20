@@ -58,9 +58,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .logo{
-    width: 100%;
+    width: 80%;
+    
 }
 
 .main-logo_title{
@@ -148,6 +150,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .main_header_drop_down  {
     width: 100%;
@@ -159,32 +162,59 @@
     
 }
 .main_header_seccond_drop_down{
-    width: 50%;
-    height:0px;
+    width: 40%;
+    height:20px;
     display: flex;
     justify-content: flex-end;
     flex-direction: row nowrap;
     z-index: 10;
     position: absolute;
 }
-.section_seccond_hover{
-    width: 45%;
+
+.main_header_free_drop_down{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    z-index: 10;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.section_free_hover{
+    width:20%;
     height: 200px;
     background-color: #9CC3D5;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+
+.section_seccond_hover{
+    width: 46%;
+    height: 200px;
+    background-color: #9CC3D5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
 .section_hover {
-    width: 24%;
+    width: 21.6%;
     height: 200px;
     background-color: #9CC3D5;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
 .countinue_hover_title{
@@ -201,7 +231,8 @@
     .main_header_menu,
     .mein_header_countinus,
     .section_hover,
-    .section_seccond_hover{
+    .section_seccond_hover,
+    .section_free_hover{
         display: none;
     }
     .main-logo_title{
@@ -220,11 +251,7 @@
     .main_input{
         width: 170px;
     }
-    .Main_input_block{
-        gap: 5px;
-        
-        
-    }
+  
   
 }
 @media screen and (max-width:564px){

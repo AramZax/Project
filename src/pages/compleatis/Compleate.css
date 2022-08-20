@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.compleate_full_parent{
+    width: 100%;
+    height: 600px;
+    background-color: #3578AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.successful_div{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 3px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+}
+.check_title_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox_icon{
+    font-size: 105px;
+    color: white;
+}
+.succesful_title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.succesful_lick_section{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.succesful_link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+   text-decoration: underline;
+}
+@media screen and (max-width:533px){
+    .successful_div{
+        width: 100%;
+    }
+}

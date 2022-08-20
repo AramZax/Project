@@ -1,158 +1,50 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import catigoria from '../../assets/catigoria.png'
 import { Link } from 'react-router-dom'
-
+import axios from 'axios'
 const CatigoryPAges = () => {
-  return (
-    <div>
-    <div className="catigories-parent">
+    const [state, setState] = useState([])
 
 
-        <div className="Home_bage_catigories">
-            <span className="home_catigories_title">House electric</span>
-            <div className="catigories_parent">
-                <div className="catigories_img">
-                    <img className="catigories_img_section" src={catigoria} alt="" />
-                </div>
+    useEffect(() => {
+        axios.get(`https://www.amazon.org.am/api/admin/services`)
+            .then(res => setState(res.data))
+            .catch((err) => console.log(err))
+    }, []);
 
-                <div className="catigories_catalog">
-                    <span className="price_location_catalog">Price per hour - 15 $</span>
-                    <span className="price_location_catalog">Worker level - expert</span>
-                    <span className="price_location_catalog">Location - UK</span>
-                </div>
-            </div>
-            <Link to ="/moreInfo">
-            <div className="catigories_read_more">
-                <button className="catigories_more">Read more</button>   
-            </div></Link>    
+    console.log(state, 'state');
 
-        </div>
+    return (
+        <>
+            <div className="catigories-parent"  >
+                {state.map((element, index) => {
+                    return (
+                        <div className="Home_bage_catigories" key={index}>
+                            <span className="home_catigories_title">{element.title}</span>
+                            <div className="catigories_parent">
+                                <div className="catigories_img">
+                                    <img className="catigories_img_section" src={element.image} alt="..." />
+                                </div>
+                            
 
-
-        <div className="Home_bage_catigories">
-            <span className="home_catigories_title">Food delivery</span>
-            <div className="catigories_parent">
-                <div className="catigories_img">
-                <img className="catigories_img_section" src={catigoria} alt="" />
-                </div>
-
-                <div className="catigories_catalog">
-                    <span className="price_location_catalog">Min Order Fee - 10$</span>
-                    <span className="price_location_catalog">Location - UK</span>
-                    
-                </div>
-            </div>
-
-            <div className="catigories_read_more">
-                <button className="catigories_more">Read more</button>
-
-            </div>
-
-        </div>
-
-
-
-        <div className="Home_bage_catigories">
-            <span className="home_catigories_title">Tennis classes</span>
-
-            <div className="catigories_parent">
-
-                <div className="catigories_img">
-                    <img className="catigories_img_section" src={catigoria} alt="" />
-                </div>
-
-                <div className="catigories_catalog">
-                    <span className="price_location_catalog">Price per hour - 40 $</span>
-                    <span className="price_location_catalog">Worker level - expert</span>
-                    <span className="price_location_catalog">Location - UK</span>
-                </div>
-
-            </div>
-
-            <div className="catigories_read_more">
-                <button className="catigories_more">Read more</button>
-            </div>
-
-        </div>
-
-
-        <div className="Home_bage_catigories">
-            <span className="home_catigories_title">Full English Course</span>
-
-            <div className="catigories_parent">
-
-                <div className="catigories_img">
-                <img className="catigories_img_section" src={catigoria} alt="" />
-                </div>
-
-                <div className="catigories_catalog">
-                    <span className="price_location_catalog">Price - 50 $</span>
-                    <span className="price_location_catalog">Upper-Intermediate Level (B2)</span>
-                    <span className="price_location_catalog">Course duration - 4 months</span>
-                </div>
-
-            </div>
-
-            <div className="catigories_read_more">
-                <button className="catigories_more">Read more</button>
-            </div>
-
-        </div>
-
-
-        <div className="Home_bage_catigories">
-            <span className="home_catigories_title">Garden care</span>
-
-            <div className="catigories_parent">
-
-                <div className="catigories_img">
-                 <img className="catigories_img_section" src={catigoria} alt="" />
-                </div>
-
-                <div className="catigories_catalog">
-                    <span className="price_location_catalog">Price per hour - 20 $</span>
-                    <span className="price_location_catalog">Worker level - expert</span>
-                    <span className="price_location_catalog">Location - UK</span>
-                </div>
-
-            </div>
-
-            <div className="catigories_read_more">
-                <button className="catigories_more">Read more</button>
-            </div>
-
-        </div>
-
-
-
-
-
-        <div className="Home_bage_catigories">
-            <span className="home_catigories_title"> Pet sitter</span>
+                                <div className="catigories_catalog">
+                                    <span className="price_location_catalog">Price per hour - {element.price} $</span>
+                                    <span className="price_location_catalog">Worker level - {element.worker_level}</span>
+                                    <span className="price_location_catalog">Location - {element.location}</span>
+                                </div>
             
-              <div className="catigories_parent">
-
-                <div className="catigories_img">
-                  <img className="catigories_img_section" src={catigoria} alt="" />
-                </div>
-
-                <div className="catigories_catalog">
-                    <span className="price_location_catalog">Price per hour - 10 $</span>
-                    <span className="price_location_catalog">Worker level - expert  </span>
-                    <span className="price_location_catalog">Location - UK</span>
-                </div>
-
+                            </div>
+                            <Link to={`/item/${element.id}`} >
+                                <div className="catigories_read_more"   >
+                                    <button className="catigories_more">Read more</button>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                })}
             </div>
-
-            <div className="catigories_read_more">
-                <button className="catigories_more">Read more</button>
-            </div>
-
-        </div>
-
-    </div>
-    </div>
-  )
+        </>
+    )
 }
 
 export default CatigoryPAges

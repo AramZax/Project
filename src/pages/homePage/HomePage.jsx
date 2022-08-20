@@ -11,7 +11,6 @@ import TopPAges from "../TopSalon/TopPAges";
 const HomePage = () => {
 
 
-
     return (
 
         <div>
@@ -22,7 +21,7 @@ const HomePage = () => {
                 <CaruselPages />
                 <CatigoryPAges />
                 <TopPAges />
-                <CatigoryPAges />
+                {/* <CatigoryPAges /> */}
                 <ComponentFooter />
             </div>
 

@@ -10,9 +10,8 @@
 .Home_page_carusel{
     width: 100%;
     height: auto;
-   
-   
 }       
+
 
 .catigories-parent{
     width: 100%;
@@ -31,20 +30,29 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 .homa_page_tops{
     width: 100%;
     height: auto;
     background-color: #9CC3D5;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+    justify-content: space-around;
+   
+}
+.top_span{
+    width: 100%;
+    color: white;
+    font-size: 28px;
 }
 .top_block{
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     display: flex;
+    align-items: center;
     flex-flow: row wrap;
     justify-content: space-around;
     
@@ -59,11 +67,19 @@
     width: 200px;
     height: 200px;
     flex-flow: column nowrap;
+    
+}
+.top_star{
+    font-size: 20px;
+    color: #FFE91F;
 }
 .top_review{
     color: white;
     font-family: Arial;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .catigories_seccond_parent{
     width: 100%;
@@ -99,6 +115,7 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 .price_location_catalog{
     color:  white;
@@ -112,6 +129,13 @@
     justify-content: flex-end;
     height: 50px;
 }
+
+
+a {
+    text-decoration: none;
+    
+}
+
 .catigories_more{
     width: 100px;
     background-color: #3578AF;
@@ -125,7 +149,6 @@
 .img1{
     width: 100%;
     
-   
 }
 .catigories_img_section{
     width: 100%;
@@ -137,4 +160,33 @@
 .main_footer_section{
     width: 100%;
     height: 50px;
+}
+
+.catigories_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:849px){
+    .Home_bage_catigories{
+        width: 600px;
+    }
+    .catigories_parent{
+        justify-content: space-around;
+    }
+    .catigories_catalog{
+        width: 250px;
+    }
+    .catigories_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+}
+@media screen and (max-width:498px){
+    .catigories_img{
+        width: 200px;
+    }
 }

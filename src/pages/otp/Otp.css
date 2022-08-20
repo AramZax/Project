@@ -6,19 +6,23 @@
 .Otp_full_login{
     width: 100%;
     height: 720px;
-    background-image: url('../../assets/newLogin.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    
+    background-color: #8cbacf;
     
 }
+.react-tel-input .form-control {
+
+   height: 45px !important;
+   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25) !important;
+
+	
+}
+
 .Otp_full_login_input{
     width: 50%;
-    height: 700px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,72 +32,30 @@
 }
 .Otp_title{
     font-size: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-.Otp_number_inp{
-    width: 50%;
-    height: 35px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 11px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.Otp_next_BtnNext{
-    width: 50%;
+.number_but{
+    width: 150px;
     height: 45px;
-    background: #9CC3D5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 11px;
-    border: none;
-    outline: none;
+    background-color: #3578AF;
     cursor: pointer;
     color: white;
-}
-.otp_page_link{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
+    font-size: 18px;
+    font-family: Arial;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
 
-
-@media screen and (max-width: 768px){
-    .Otp_full_login_input{
-     width: 70%;
-    }
-    .Otp_full_login{
-        background-image: url("../../assets/newLoginTablet.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
-    .Otp_next_BtnNext{
-        width: 65%;
-    }
-    
-    
 }
-@media screen and (max-width:500px){
-    .Otp_next_BtnNext{
-        width: 70%;
+@media screen and (max-width:412px){
+    .otp_title{
+        font-size: 22px;
     }
-}
-@media screen and (max-width: 412px){
-    .Otp_full_login_input{
-        width: 90%;
+    .react-tel-input .form-control{
+        width: 250px !important;
     }
-    .Otp_full_login{
-        background-image: url("../../assets/newLoginPhone.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
-    .Otp_next_BtnNext{
-        width: 95%;
-    }
-  
 }

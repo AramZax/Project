@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pages_contactUS_parent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+
+}
+.contactUS_main{
+    width: 100%;
+    height: auto;
+    background-color: #3578AF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+.contact_us_span{
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 22px;
+    color: white;
+}
+
+
+.contact_us_view_task{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact_us_view_task div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 80px;
+    font-family: Arial;
+    background-color: #9CC3D5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    cursor: pointer;
+}
+.contact_us_other_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+.contact_us_other_title{
+    color: white;
+    font-family: Arial;
+}
+
+
+.information_section_parent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.information_section{
+    width: 45%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 51px;
+}
+.contact_us_inp_section{
+    width: 45%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.contact_us_name_inp{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+.contact_name{
+    padding-left: 5px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+    
+}
+.inp_section_span{
+    font-family: Arial;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.message_inp{
+    height: 200px;
+    font-size: 18px;
+    font-family: Arial;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+    padding-left: 5px;
+}
+.contact_btn{
+    width:100%;
+    height: 45px;
+    background-color: #9CC3D5;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.information_Section_Span{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-family: Arial;
+    
+}
+.info_span{
+    font-size: 28px;
+}
+.information_social_Section{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.info_social_icons{
+    font-size: 38px;
+}
+.insta{
+    color: white;
+    border-radius: 8px;
+    background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
+
+}
+.face{
+    background-color: white;
+    color:#1877F2 ;
+    border-radius: 7px;
+}
+.in,.twiter{
+    color: white;
+    background-color: #0078B5;
+    border-radius: 7px;
+    font-size: 40px;
+}
+
+.info_phone_icon,
+.info_masseg_icon,
+.info_location_icon{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:747px){
+    .contact_us_view_task {
+        height: auto;
+        gap: 10px;
+    }
+
+    .contact_us_view_task div{
+        width: 250px;
+    }
+   
+    .contact_us_inp_section{
+            width: 300px;
+          
+    }
+    .information_section{
+        width: 300px;
+        
+        
+    }
+    .contact_name,
+    .message_inp
+ 
+    {
+        width: 200px;
+    }
+    .contact_btn{
+        width: 204px;
+    }
+    .contact_us_view_task{
+            flex-wrap: wrap;
+    }
+
+    .information_section_parent {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .contact_us_name_inp {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:591px){
+    .information_section,
+    .contact_us_inp_section{
+        width: 90%;
+    }
+    .information_Section_Span{
+        font-size: 14px;
+    }
+    .contact_name,
+    .message_inp,
+    .contact_btn{
+        width: 250px;
+    }
+}
+@media screen and (max-width:327px){
+    .contact_us_inp_section,
+    .information_section{
+        width: 100%;
+    }
+}
